@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-FRONT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h1 class="h1">FORMULARIO DE REGISTRO</h1>
+        <form id="form" class="container" action="">
+            <div class="form-container">
+                <div class="box-1">
+                    <input id="name" name="nombre" class="form-control mt-3" type="text" placeholder="Nombre">
+                    <span class="error" id="nameErrors"></span>
+                    <input id="lastname" class="form-control mt-3" name="apellido" type="text" placeholder="Apellido">
+                    <span id="lastnameErrors"></span>
+                    <input id="dni" class="form-control mt-3" name="dni" type="text" placeholder="DNI">
+                    <span id="dniErrors"></span>
+                    <input id="email" class="form-control mt-3" name="email" type="email" placeholder="Correo electrónico">
+                    <span id="emailErrors"></span>
+                    <input id="pass" class="form-control mt-3" name="pass" type="password" placeholder="Ingrese su contraseña">
+                    <span id="passErrors"></span>
+                    <input id="pass2" class="form-control mt-3" name="pass2" type="password" placeholder="Reingrese su contraseña">
+                    <span id="pass2Errors"></span>
+                    <input id="date" class="form-control mt-3" name="date" type="date" placeholder="Reingrese su contraseña">
+                    <span id="dateErrors"></span>
+                    <select class="form-control mt-3" name="sexo" id="sexo">
+                        <option value="" hidden selected>Sexo</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                        <option value="O">Otrxs</option>
+                    </select>
+                    <span id="sexErrors"></span>
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Acepto los términos y condiciones
+                        </label>
+                        <span id="termsErrors"></span>
+                    </div>
+                </div>
+                <div class="box-2 mt-3">
+                    <div class="img-container" id="img-preview">
+                        
+                    </div>
+                    <input class="form-control mt-3" type="file" id="formFile">
+                    <span id="fileErrors"></span>
+                </div>
+            </div>
+            <span id="submitErrors"></span>
+            <button class="btn btn-primary mt-3" type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="http://momentjs.com/downloads/moment.min.js"></script>
+</body>
+</html>

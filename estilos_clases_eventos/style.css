@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+    background-color: skyblue;
+}
+
+li{
+    list-style: none;
+}
+
+.header-violeta{
+    width: 100%;
+    height: auto;
+    background-color: slateblue;
+}
+
+.letras-verdes{
+    color: springgreen;
+}
+
+.header-rojo{
+    width: 100%;
+    height: auto;
+    background-color: red;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main section{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main article{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
